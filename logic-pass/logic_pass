@@ -1,0 +1,26 @@
+#question (1)
+replace() method
+#question (2)
+lower_value = int(input ("Please, Enter the Lowest Range Value: "))  
+upper_value = int(input ("Please, Enter the Upper Range Value: "))  
+  
+print ("The Prime Numbers in the range are: ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number)  
+#(question 3)
+#Python Program to Count Occurrence of a Character in a String
+
+string = input("Please enter your own String : ")
+char = input("Please enter your own Character : ")
+
+count = 0
+for i in range(len(string)):
+    if(string[i] == char):
+        count = count + 1
+
+print("The total Number of Times ", char, " has Occurred = " , count)
